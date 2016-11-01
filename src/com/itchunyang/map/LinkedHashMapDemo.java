@@ -26,7 +26,7 @@ public class LinkedHashMapDemo {
         /**
          * 如果removeEldestEntry返回true，那么LinkedHashMap会自动删掉最不常用的那个entry（也就是header线性表最前面的那个）。
          */
-        int MAXSIZE = 5;
+        final int MAXSIZE = 5;
         linkedHashMap = new LinkedHashMap(15,0.75f,true){
             //定义put后的移除规则，大于容量就删除eldest
             @Override

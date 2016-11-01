@@ -8,6 +8,7 @@ import java.util.PriorityQueue;
 public class PriorityQueueDemo {
 
     public static void main(String[] args) {
+
         PriorityQueue<Staff> priorityQueue = new PriorityQueue<>(5);
         priorityQueue.add(new Staff(1,"员工1"));
         priorityQueue.add(new Staff(4,"员工4"));
@@ -50,7 +51,7 @@ public class PriorityQueueDemo {
 
         @Override
         public int compareTo(Staff o) {
-            return id - o.id;
+            return o.id - id;
         }
     }
 }
